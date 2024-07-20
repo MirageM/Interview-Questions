@@ -23,4 +23,4 @@ class Solution(object):
                 result.append([products[l]])
             else:
                 result.append([])
-        return resulta
+        return result
