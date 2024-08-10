@@ -15,7 +15,7 @@ class LRUCache(OrderedDict):
         self[key] = value
         if len(self) > self.capacity:
             self.popitem(last=False)
-            return self[key]
+        self.move_to_end(key)
 
 
 # Your LRUCache object will be instantiated and called as such:
